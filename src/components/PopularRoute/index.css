@@ -1,0 +1,24 @@
+.loader-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #89abe3;
+}
+
+.popular-body {
+  background-color: #89abe3;
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.cards-body {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
