@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom'
-import {FaHeart} from 'react-icons/fa'
+import {BsHeartFill} from 'react-icons/bs'
 import './index.css'
 
 const MovieCard = props => {
@@ -13,7 +13,7 @@ const MovieCard = props => {
         <div className="title-rating">
           <h1 className="movie-title">{title}</h1>
           <div className="rating-heart">
-            <FaHeart className="heart-logo" />{' '}
+            <BsHeartFill className="heart-logo" />{' '}
             <span className="movie-rating">Rating: {voteAverage}</span>
           </div>
         </div>

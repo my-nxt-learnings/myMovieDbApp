@@ -3,10 +3,6 @@ import Loader from 'react-loader-spinner'
 import Header from '../Header'
 import FailureView from '../FailureView'
 import MovieDetailRoute from '../MovieDetailRoute'
-import Slider from 'react-slick'
-
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
 
 import './index.css'
 

@@ -1,5 +1,5 @@
 import './index.css'
-import {FaHeart} from 'react-icons/fa'
+import {BsHeartFill} from 'react-icons/bs'
 
 const MovieDetailRoute = props => {
   const {movieResponse} = props
@@ -15,7 +15,7 @@ const MovieDetailRoute = props => {
         <div className="head-logo">
           <h1 className="details-heading">{title}</h1>
           <div className="rating-heart-details">
-            <FaHeart className="details-heart-logo" />{' '}
+            <BsHeartFill className="details-heart-logo" />
             <span className="details-movie-rating">Rating: {rating}</span>
           </div>
         </div>
