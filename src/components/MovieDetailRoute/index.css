@@ -37,6 +37,12 @@
   box-shadow: 4px 4px 10px;
 }
 
+@media screen and (max-width:600px){
+  .movie-details-image{
+    height: 300px;
+  }
+}
+
 .details-card {
   width: 97%;
 }

@@ -9,8 +9,6 @@
   flex-direction: column;
   align-items: center;
   width: 200px;
-  /* border: 1px solid #fff;
-  border-radius: 20px; */
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   padding: 20px;
@@ -59,10 +57,36 @@
   background-color: rgb(66, 130, 190);
 }
 
+@media screen and (max-width: 600px) {
+  .movie-card-container {
+    width: 250px;
+    align-self: center;
+  }
+  .movie-card-image {
+    height: 100px;
+  }
+  .views-visit {
+    flex-direction: column;
+    align-items: center;
+  }
+  .title-rating {
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 2px;
+  }
+
+  .movie-title {
+    text-align: center;
+  }
+  .view-button {
+    margin-bottom: 10px;
+  }
+}
+
 .title-rating {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+
   margin-top: 5px;
 }
 
@@ -82,6 +106,9 @@
 
 .movie-title {
   font-size: 20px;
+  height: 30px;
+  width: 200px;
+  overflow: hidden;
 }
 
 .view-button {
@@ -96,7 +123,7 @@
 .rating-heart {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .heart-logo {

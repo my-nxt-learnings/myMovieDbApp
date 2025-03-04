@@ -1,5 +1,4 @@
 import {Link, withRouter} from 'react-router-dom'
-// import {useState, useEffect} from 'react'
 
 import {BsSearch} from 'react-icons/bs'
 import SearchContext from '../../context/SearchContext'
@@ -39,9 +38,6 @@ const Header = props => {
             >
               <BsSearch className="search-logoo" />
             </button>
-            <button type="button" className="butn">
-              Search
-            </button>
           </div>
         )
       }}
@@ -57,17 +53,17 @@ const Header = props => {
         <ul className="nav-items-list">
           <li className="nav-item">
             <Link className="nav-link" to="/">
-              <h1>Popular</h1>
+              <h1 className="head">Popular</h1>
             </Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/top-rated">
-              <h1>Top Rated</h1>
+              <h1 className="head">Top Rated</h1>
             </Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/upcoming">
-              <h1> Upcoming</h1>
+              <h1 className="head"> Upcoming</h1>
             </Link>
           </li>
         </ul>

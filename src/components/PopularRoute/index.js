@@ -60,11 +60,11 @@ class PopularRoute extends React.Component {
       return <EmptyView />
     }
     return (
-      <ul className="cards-body">
+      <div className="cards-body">
         {results.map(movie => (
           <MovieCard key={movie.id} movieDetails={movie} />
         ))}
-      </ul>
+      </div>
     )
   }
 

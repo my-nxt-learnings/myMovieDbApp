@@ -7,6 +7,7 @@
   padding: 20px;
   align-items: center;
   justify-content: center;
+  height: auto;
 }
 
 .top-cards-body {
@@ -14,4 +15,13 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+  .top-cards-body {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Ensure cards are centered horizontally */
+    justify-content: center; /* Center the content vertically */
+    padding: 0 10px; /* Add some side padding */
+  }
 }

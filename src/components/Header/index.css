@@ -4,7 +4,24 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  height: 20vh;
+  min-height: 20vh;
+  width: 100vw;
+}
+
+.head {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav-items-list {
+    flex-direction: column;
+  }
 }
 
 .nav-content {

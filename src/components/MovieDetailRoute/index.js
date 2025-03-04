@@ -4,6 +4,8 @@ import {BsHeartFill} from 'react-icons/bs'
 const MovieDetailRoute = props => {
   const {movieResponse} = props
   const {movieImageUrl, rating, releaseDate, description, title} = movieResponse
+  const newRating = rating.toString().slice(0, 3)
+
   return (
     <div className="movie-detail-card">
       <img
@@ -16,7 +18,7 @@ const MovieDetailRoute = props => {
           <h1 className="details-heading">{title}</h1>
           <div className="rating-heart-details">
             <BsHeartFill className="details-heart-logo" />
-            <span className="details-movie-rating">Rating: {rating}</span>
+            <span className="details-movie-rating">Rating: {newRating}</span>
           </div>
         </div>
         <p className="details-description">{description}</p>
